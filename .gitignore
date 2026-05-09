@@ -1,26 +1,48 @@
-# Virtual environment
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
 
-# Python cache
+# Python cache and test artifacts
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Environment variables
-.env
+# FastAPI/Uvicorn runtime files
+*.log
+*.pid
 
-# VS Code
+# Uploaded/local documents
+uploads/
+tmp/
+temp/
+*.pdf
+*.docx
+*.doc
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Editors
 .vscode/
-
-# PyCharm
 .idea/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Build files
-build/
-dist/
-
 # OS files
 .DS_Store
+Thumbs.db
